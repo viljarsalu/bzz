@@ -1,0 +1,69 @@
+// normal
+@font-face {
+  font-family: 'BizziWeb';
+  font-style: normal;
+  font-weight: 400;
+  src: local('SourceSansPro'),
+  url('../fonts/bizzifonts/WOFF/TTF/SourceSansPro-Regular.ttf.woff') format('woff'),
+  url('../fonts/bizzifonts/TTF/SourceSansPro-Regular.ttf') format('ttf'),
+  url('../fonts/bizzifonts/EOT/SourceSansPro-Regular.eot') format('eot');
+}
+// italic
+@font-face {
+  font-family: 'BizziWeb';
+  font-style: italic;
+  font-weight: 400;
+  src: local('SourceSansPro'),
+  url('../fonts/bizzifonts/WOFF/TTF/SourceSansPro-It.ttf.woff') format('woff'),
+  url('../fonts/bizzifonts/TTF/SourceSansPro-It.ttf') format('ttf'),
+  url('../fonts/bizzifonts/EOT/SourceSansPro-It.eot') format('eot');
+}
+// bold
+@font-face {
+  font-family: 'BizziWeb';
+  font-style: normal;
+  font-weight: bold;
+  src: local('SourceSansPro'),
+  url('../fonts/bizzifonts/WOFF/TTF/SourceSansPro-Bold.ttf.woff') format('woff'),
+  url('../fonts/bizzifonts/TTF/SourceSansPro-Bold.ttf') format('ttf'),
+  url('../fonts/bizzifonts/EOT/SourceSansPro-Bold.eot') format('eot');
+}
+// bold italic
+@font-face {
+  font-family: 'BizziWeb';
+  font-style: italic;
+  font-weight: bold;
+  src: local('SourceSansPro'),
+  url('../fonts/bizzifonts/WOFF/TTF/SourceSansPro-BoldIt.ttf.woff') format('woff'),
+  url('../fonts/bizzifonts/TTF/SourceSansPro-BoldIt.ttf') format('ttf'),
+  url('../fonts/bizzifonts/EOT/SourceSansPro-BoldIt.eot') format('eot');
+}
+
+// normal / Headings
+@font-face {
+  font-family: 'BizziWebHeading';
+  font-style: normal;
+  src: local('UnitSlabWebPro-Medium'),
+  url('../fonts/bizzifonts/WOFF/UnitSlabWebPro.woff') format('woff')
+}
+@font-face {
+  font-family: 'BizziWebHeading';
+  font-style: normal;
+  //font-weight: 400;
+  src: local('UnitSlabWebPro-Medium'),
+  url('../fonts/bizzifonts/WOFF/UnitSlabScWebPro.woff') format('woff')
+}
+
+/* @font-face {
+  font-family: 'BizziWebHeading';
+  font-style: normal;
+  src: local('UnitSlabWebPro-Medium'),
+  url('../fonts/bizzifonts/WOFF/UnitSlabScWebPro-Medium.woff') format('woff')
+}
+@font-face {
+  font-family: 'BizziWebHeading';
+  font-style: normal;
+  //font-weight: 400;
+  src: local('UnitSlabWebPro-Medium'),
+  url('../fonts/bizzifonts/WOFF/UnitSlabWebPro-Medium.woff') format('woff')
+} */

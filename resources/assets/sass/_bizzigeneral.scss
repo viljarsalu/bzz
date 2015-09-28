@@ -1,0 +1,135 @@
+/*
+* GENERAL
+*/
+.vertical-center {
+  @include vertical-align;
+
+}
+
+/* Borders styles */
+[class*="border"] {
+  border-color: rgba(153, 153, 153, 1);
+  border-width: 1px;
+}
+.border-top {
+  border-top-style: solid;
+}
+.border-bottom {
+  border-bottom-style: solid;
+}
+.border-top {
+  border-top-style: solid;
+}
+
+/* Horizontal line */
+hr {
+  background-color: rgba(153, 153, 153, 1);
+  clear: both;
+  display: block;
+  float: none;
+  height: 1px;
+  margin-left: 10px;
+  margin-right:10px;
+  margin-top: 30px;
+  margin-bottom:37px;
+}
+
+/* colors */
+.gray-dark{
+  color: rgba(102, 102, 102, 1);
+}
+.light-dark {
+  color:rgba(153, 153, 153, 1);
+}
+.gray {
+  background-color: #f3f3f3;
+}
+.blue {
+  background-color: rgba(0, 34, 121, 1);
+}
+.blue-text {
+  color: rgba(0, 34, 121, 1)!important;
+}
+.orange {
+  background-color: #FF7819;
+}
+.orange-text {
+  color:#FF7819!important;
+}
+
+.green {
+  background-color:#00B31E;
+}
+.green-text {
+  color:#00B31E!important;
+}
+/* Helpers classes */
+.plain-text {
+  &:hover {
+    text-decoration: none;
+  }
+}
+.center-text {
+  text-align: center;
+}
+.margin-reset {
+  margin: 0!important;
+}
+.margin-bottom-offset-10 {
+  margin-bottom: 10px!important;
+}
+.margin-top-xl {
+  margin-top: 45px;
+}
+.padding-reset{
+  padding: 0!important;
+}
+.pointer {
+  cursor: pointer;
+}
+.floating-block {
+  position: relative;
+  &.right {
+    right:0;
+  }
+}
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.fixed-width {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* SPECIFIED CLASSES */
+.mail-block {
+  padding-right:30px;
+}
+/* small device */
+@media screen and (max-width: $screen-sm) {
+  .hide-sm-brakes {
+    br {
+      display: none;
+    }
+  }
+}
+
+/* TABLET */
+@media screen and (min-width: $screen-sm) {
+  .floating-block {
+    position: absolute;
+    &.right {
+      right:0;
+    }
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: $screen-desktop){
+
+}

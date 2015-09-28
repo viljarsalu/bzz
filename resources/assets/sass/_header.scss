@@ -1,0 +1,209 @@
+header {
+  .navbar {
+    .navbar-brand {
+      height: 72px;
+      img {
+        width: 406px;
+      }
+    }
+    .container {
+      height: 100%;
+
+      .navbar-collapse {
+        /*height: 100%!important;*/
+
+        .navbar-nav {
+          height: 100%;
+          position: relative;
+
+          &:after {
+            clear: both;
+            content: "";
+            display: block;
+            width: 1px;
+            background-color: $navbar-vertical-line;
+            position: absolute;
+            left: 0;
+            height: 72px;
+            top: 20px;
+          }
+
+          > li {
+
+            &:last-child {
+              &:after {
+                clear: both;
+                content: "";
+                display: block;
+                width: 1px;
+                background-color: $navbar-vertical-line;
+                position: absolute;
+                left: 0;
+                top: 4px;
+                height: 72px;
+              }
+            }
+            a {
+              padding: $navbar-link-padding;
+              text-transform: uppercase;
+            }
+          }
+          &.navbar-right {
+            &:after {
+              background-color: transparent;
+            }
+
+            &.select-language {
+              > li {
+                &:after{
+                  background-color: transparent;
+                }
+                a {
+                  line-height: 2em;
+                  text-align: right;
+                  text-transform: uppercase;
+                  //color: rgba(102, 102, 102, 1);
+                  font-size: 14px;
+                }
+              }
+            }
+            a {
+              padding: 0 15px;
+              text-align: center;
+              white-space: nowrap;
+              text-transform: capitalize;
+            }
+            > li {
+              &:first-child {
+                &:after {
+                  background-color: transparent;
+                }
+              }
+              &:after {
+                clear: both;
+                content: "";
+                display: block;
+                width: 1px;
+                background-color: $navbar-vertical-line;
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    .icon-bar {
+      background-color: #0099ff;
+    }
+  }
+  .icon-bar {
+    background-color: #002279;
+  }
+}
+.menu-left {
+  padding-right: 10px;
+}
+@media screen and (min-width: 890px){
+  header {
+    .navbar {
+      .container {
+        .navbar-collapse {
+          height: 100% !important;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 889px) {
+  .menu-left {
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 112px;
+    z-index: 99999;
+    margin: 0!important;
+    width: 200px;
+    overflow-y: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+    > ul {
+      padding-left: 10px;
+      padding-right: 10px;
+
+      li {
+        a {
+          padding:5px!important;
+        }
+      }
+    }
+    ul {
+      height: auto!important;
+      li {
+        background-color: transparent;
+        &:after{
+          background-color: transparent!important;
+        }
+        a {
+          text-align: left!important;
+          padding-left: 0!important;
+          line-height: 1.42857;
+        }
+      }
+    }
+    .select-language {
+      height: 30px!important;
+      > li {
+        height: auto!important;
+        a {
+          display: inline-block;
+          float: right;
+          padding-left: 20px!important;
+        }
+      }
+    }
+    .vertical-center {
+      top:0;
+      transform: translateY(0);
+    }
+    .dropdown-menu {
+      display: block;
+      position: relative;
+      box-shadow: 0 0 0 rgba(0,0,0,0);
+      float: none;
+      border: 0;
+      top: 0;
+      margin-top: 0!important;
+      > li {
+        border: 0;
+        a {
+          padding-left: 10px!important;
+        }
+      }
+    }
+  }
+}
+
+.bizzi-logo{
+  background: url(../../images/Bizzi-Partners-development.png) no-repeat 23px 0 transparent;
+  background-size: auto 72px;
+  text-indent: -9999999px;
+  width: 215px;
+}
+
+/* TABLET */
+@media screen and (min-width: 500px) {
+  .bizzi-logo{
+    text-indent: -99999px;
+    width: 440px;
+  }
+}

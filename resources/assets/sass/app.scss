@@ -1,0 +1,271 @@
+/*
+ * Web Starter Kit
+ *
+ * Multi-screen layout styles for your page. Brought to you by the
+ * Web Starter Kit team.
+ *
+ */
+//@import 'h5bp';
+@import 'variables';
+@import 'fonts';
+@import 'bootstrap';
+@import 'lightbox/lightbox';
+@import 'bizzigeneral';
+@import 'bizzicomponents';
+@import 'header';
+@import 'footer';
+@import 'carousel';
+@import 'slick/slick';
+@import 'slick/slick-theme';
+@import 'slider';
+/*
+ * Visual Style Guide styles
+ * Remove if you prefer to use a CSS library, like Bootstrap
+ */
+//@import 'components/components';
+html,
+body {
+  font-family: 'BizziWeb', Fallback, sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: rgba(102, 102, 102, 1);
+  font-size: 16px;
+  min-width: 360px;
+}
+body {
+  position: relative;
+  /*font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+  font-weight: 300;*/
+  background-color: #fff;
+  box-sizing: border-box;
+  min-height: 100%;
+}
+.container {
+  max-width: 980px;
+  width: 980px;
+}
+@media(max-width: 980px){
+  .container {
+    width:100%;
+  }
+
+}
+main {
+  > section {
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+  }
+  .container section{
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+
+.block {
+  display: block;
+}
+.font-xl {
+  font-size: 38px!important;
+}
+/* Headings style*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'BizziWebHeading', Fallback, sans-serif;
+  small {
+    font-family: 'BizziWeb', Fallback, sans-serif;
+  }
+}
+.regular-font {
+  font-family: 'BizziWeb', Fallback, sans-serif;
+}
+.link-box {
+  font-family: 'BizziWeb', Fallback, sans-serif;
+}
+/*
+* TEST AREA
+*/
+@media screen and (max-width: 500px) {
+  .jumbotron {
+    .carousel {
+      .caption {
+        top:0;
+        left: 20px;
+        h1 {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  .text-block {
+    h2 {
+      font-size: 33px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+    h4 {
+      font-size: 35px;
+    }
+  }
+
+  article .article h3 {
+    font-size: 33px;
+  }
+
+  .gallery-list .item {
+    margin-bottom: 10px;
+    .thumbnail .caption {
+      height: 110px;
+      h3 {
+        font-size: 14px;
+        line-height: 17px;
+        margin: 10px 10px 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 590px) {
+  .jumbotron {
+    .container {
+      .title-block {
+        h2 {
+          margin: 0;
+          text-shadow: 2px 2px 8px #002279;
+          br {
+            display: inline;
+          }
+        }
+        h3 {
+          margin-bottom:10px;
+          a {
+            padding-right: 10px;
+            text-shadow: 2px 2px 8px #002279;
+          }
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .carousel .caption h1 {
+    font-size: 30px;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width:1090px ) {
+  .lb-outerContainer .lb-close {
+    right: 0;
+    width: 45px;
+    height: 45px;
+  }
+}
+
+.lb-dataContainer {
+  border-bottom-right-radius: 0px;
+}
+@media screen and (min-width: 768px) and (max-width: 979px) {
+
+  article {
+    img {
+      width: 59.8%;
+    }
+    .article {
+      padding-left: 63.2%;
+    }
+  }
+}
+
+/* TABLET */
+@media screen and (min-width: $screen-sm) {
+
+}
+/* DESKTOP */
+@media screen and (min-width: $screen-desktop){
+ //
+}
+
+
+/*  NEW STYLES */
+.jumbotron {
+  background-color: #5e6a71;
+}
+.jumbotron .carousel .caption h1 small {
+  margin-top: 5px;
+}
+.link-box, .list .item h5 .link-box {
+  font-size: 20px;
+}
+footer .addresses .item {
+  width: 140px;
+}
+.link-block .link {
+  font-size: 20px;
+  padding: 7px 10px;
+}
+
+
+.thumbnail{
+  padding-right: 5px;
+}
+.thumbnail:last-child{
+  padding-right: 0px;
+}
+.thumbnail .caption {
+  margin-left: 5px;
+}
+.thumbnail .caption h3 {
+    color: #666;
+    font-family: "BizziWeb",Fallback,sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+    margin: 0;
+    margin-top: 10px;
+}
+.thumbnail .caption p {
+    color: #666;
+    font-size: 14px;
+}
+
+.modal-open {
+  padding: 0;
+}
+.modal.gallery-layer {
+  padding-right:0!important;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+
+  .close {
+    font-size: 3rem;
+    line-height: 38px;
+    margin-top: 0;
+    &:hover {
+      text-decoration:none;
+    }
+  }
+
+  .modal-dialog {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+
+    .modal-content {
+      height: 100%;
+      box-shadow: 0 0 0;
+      border-radius: 0;
+    } 
+  }
+}
